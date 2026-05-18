@@ -1,0 +1,6 @@
+# Python build and metadata artifacts
+*.egg-info/
+__pycache__/
+*.pyc
+build/
+dist/
