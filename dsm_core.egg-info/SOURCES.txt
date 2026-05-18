@@ -1,0 +1,17 @@
+setup.py
+dsm_core.egg-info/PKG-INFO
+dsm_core.egg-info/SOURCES.txt
+dsm_core.egg-info/dependency_links.txt
+dsm_core.egg-info/top_level.txt
+dsm_core_modules/__init__.py
+dsm_core_modules/benchmarks.py
+dsm_core_modules/buckling_analysis.py
+dsm_core_modules/element.py
+dsm_core_modules/loads.py
+dsm_core_modules/main.py
+dsm_core_modules/node.py
+dsm_core_modules/plotter.py
+dsm_core_modules/results.py
+dsm_core_modules/solver_1st.py
+dsm_core_modules/solver_2nd.py
+dsm_core_modules/structure.py
