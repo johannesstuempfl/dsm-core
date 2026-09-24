@@ -1,6 +1,6 @@
 import numpy as np
-from structure import Structure
-from results import Results
+from .structure import Structure
+from .results import Results
 
 
 class Solver1stOrder:

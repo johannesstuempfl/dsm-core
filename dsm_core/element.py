@@ -1,5 +1,5 @@
 import numpy as np
-from node import Node
+from .node import Node
 
 class Element:
     """
@@ -245,6 +245,13 @@ class TrussElement(Element):
     Fachwerkstab: nur Normalkraftanteil, keine Biegung.
     Erbt Geometrie und Transformation von Element,
     überschreibt nur k_local (4×4) und T (4×4).
+
+    NOT PRODUCTION READY: this element has not been benchmarked or
+    validated against known analytical solutions (unlike the frame
+    Element, see benchmarks/), and its interaction with Structure
+    (e.g. mixed frame/truss assemblies, geometric stiffness for 2nd
+    order analysis) has not been verified. Use with caution and verify
+    results independently before relying on it.
     """
 
     def __init__(self, id: int, node_i: Node, node_j: Node,

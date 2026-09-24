@@ -1,5 +1,5 @@
 import numpy as np
-from structure import Structure
+from .structure import Structure
 
 # Übersetzung: interner DOF-Name → lesbarer Ausgabename
 DOF_DISPLAY_NAMES = {

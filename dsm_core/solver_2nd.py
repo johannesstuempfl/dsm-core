@@ -1,7 +1,7 @@
 import numpy as np
-from structure import Structure
-from results import Results
-from solver_1st import Solver1stOrder
+from .structure import Structure
+from .results import Results
+from .solver_1st import Solver1stOrder
 
 class Solver2ndOrder:
     """

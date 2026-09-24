@@ -1,5 +1,5 @@
-from structure import Structure
-from solver_1st import Solver1stOrder
+from .structure import Structure
+from .solver_1st import Solver1stOrder
 import numpy as np
 
 class BucklingAnalysis:
