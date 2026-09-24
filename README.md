@@ -64,8 +64,6 @@ The solver is checked against classical closed-form beam theory solutions. Each 
 | BM6 | `bm6_euler_buckling.py` | Euler buckling, pinned-pinned column | Critical load `Pcr = pi^2 EI / L^2` | ~1e-5 relative error (10-element mesh) |
 | BM7 | `bm7_beam_column_amplification.py` | Beam-column under axial + transverse load | 2nd-order moment amplification factor `1/(1-N/Pcr)` | ~5% (approximate reference formula; see note below) |
 
-BM1-BM5 use the Direct Stiffness Method's known nodal-exactness property for prismatic Euler-Bernoulli elements, so they match the analytical solution to floating-point precision rather than just "closely." BM6 converges to the exact Euler load as the mesh is refined. BM7 compares against the classical amplification-factor approximation (itself accurate only to a few percent), so it uses a looser tolerance and validates order-of-magnitude correctness of the geometric stiffness formulation rather than exact agreement.
-
 Each benchmark is a standalone script and can be run individually, e.g.:
 
 ```bash
